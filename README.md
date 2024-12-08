@@ -1,9 +1,9 @@
 # Personalized-Treatment-Recommendation-System-for-Thyroid-Disease
 
 # Overview of the Project 
-Repository Link - https://github.com/BinathMendis/Personalized-Treatment-Recommendation-System-for-Thyroid-Disease.git
-Research Topic - Personalized Treatment Recommendation System for Thyroid Disease
-Project ID - 24-25-148J
+#### Repository Link - https://github.com/BinathMendis/Personalized-Treatment-Recommendation-System-for-Thyroid-Disease.git
+#### Research Topic - Personalized Treatment Recommendation System for Thyroid Disease
+#### Project ID - 24-25-148J
 
 ### Member 1 - IT21192296 - Name - Mendis W.W.B.B  / Component 1 - Wellness Navigator
 ### Member 2 - IT21342158 - Name - Hapugahapitiya H.M.S / Component 2 - Machine Learning Approach for Proactive Risk Prediction of Thyroid Dysfunction for Pregnancy Planning ​

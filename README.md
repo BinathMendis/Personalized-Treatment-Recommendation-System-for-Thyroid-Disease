@@ -15,7 +15,7 @@ Project ID - 24-25-148J
 Early detection of thyroid disease is crucial, but effective treatment is essential for curing it. The Wellness Navigator system plays a key role in helping patients manage thyroid disease more efficiently by providing personalized dietary recommendations based on thyroid levels and personal appearance, while also tracking reports and setting goals to manage the disease. Thyroid disorders, such as Hypothyroidism and Hyperthyroidism, affect millions worldwide, and early diagnosis is critical for effective treatment. However, traditional diagnostic methods can often be slow and inaccurate. This project utilizes machine learning to analyze thyroid scans and TSH levels, enabling faster, more accurate diagnoses. Additionally, 5-10% of women have positive thyroxine antibodies in their bodies, even when their TSH levels appear normal, which can lead to complications during pregnancy, such as premature delivery, miscarriages, and preeclampsia. To address this, the system aims to develop an AI-powered tool that accurately assesses an individual's risk of thyroid disease by analyzing multi-modal data, including clinical, biochemical, genetic, and imaging information. The tool provides personalized risk scores and tailored treatment recommendations, improving early detection, enhancing treatment outcomes, and supporting clinical decision-making in the management of thyroid disorders.
 
 # System Architectural Diagram
-
+![Untitled Diagram](https://github.com/user-attachments/assets/c648cbd0-235a-4ff7-bcb5-1fd9e9b125cc)
 
 
 # Dependencies

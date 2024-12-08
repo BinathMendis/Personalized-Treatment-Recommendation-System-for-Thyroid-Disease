@@ -19,7 +19,7 @@ Early detection of thyroid disease is crucial, but effective treatment is essent
 
 
 # Dependencies
-//IT21192296
+### IT21192296
 pandas==2.2.3
 scikit-learn==1.5.2
 joblib==1.4.2
@@ -29,7 +29,7 @@ numpy==2.1.3
 Flask==3.1.0
 Flask-CORS==3.0.10
 
-//IT21342158
+### IT21342158
 Flask==2.1.2
 Flask-CORS==3.0.10
 numpy==1.23.5
@@ -41,7 +41,7 @@ matplotlib==3.6.2
 seaborn==0.12.0
 joblib==1.2.0
 
-//IT21225574
+### IT21225574
 Flask==2.1.2
 Flask-CORS==3.0.10
 numpy==1.23.5
@@ -53,7 +53,7 @@ matplotlib==3.6.2
 seaborn==0.12.0
 joblib==1.2.0
 
-//IT21168086
+### IT21168086
 torch
 unittest
 numpy

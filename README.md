@@ -5,10 +5,10 @@ Repository Link - https://github.com/BinathMendis/Personalized-Treatment-Recomme
 Research Topic - Personalized Treatment Recommendation System for Thyroid Disease
 Project ID - 24-25-148J
 
-### Member 1 - IT21192296 - Name - Mendis W.W.B.B (GitUsername - BinathMendis) / Component 1 - Wellness Navigator
-### Member 2 - IT21342158 - Name - Hapugahapitiya H.M.S (GitUsername - ) / Component 2 - 
-### Member 3 - IT21225574 - Name - Jayasinghe J.A.J.M (GitUsername - ) / Component 3 - 
-### Member 4 - IT21168086 - Name - Munasinghe V.N (GitUsername - ) / Component 4 -  
+### Member 1 - IT21192296 - Name - Mendis W.W.B.B  / Component 1 - Wellness Navigator
+### Member 2 - IT21342158 - Name - Hapugahapitiya H.M.S / Component 2 - Machine Learning Approach for Proactive Risk Prediction of Thyroid Dysfunction for Pregnancy Planning ​
+### Member 3 - IT21225574 - Name - Jayasinghe J.A.J.M / Component 3 - Machine Learning Approach for Timely Diagnosis of Thyroid Conditions
+### Member 4 - IT21168086 - Name - Munasinghe V.N / Component 4 - AI Powered Thyroid Disease Risk Assessment Tool​
 
 #### Brief Description of the project - 
 
@@ -42,6 +42,16 @@ seaborn==0.12.0
 joblib==1.2.0
 
 //IT21225574
+Flask==2.1.2
+Flask-CORS==3.0.10
+numpy==1.23.5
+pandas==1.5.3
+scikit-learn==1.2.2
+tensorflow==2.11.0
+gunicorn==20.1.0
+matplotlib==3.6.2
+seaborn==0.12.0
+joblib==1.2.0
 
 //IT21168086
 torch

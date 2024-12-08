@@ -8,7 +8,7 @@ Project ID - 24-25-148J
 ### Member 1 - IT21192296 - Name - Mendis W.W.B.B (GitUsername - BinathMendis) / Component 1 - Wellness Navigator
 ### Member 2 - IT21342158 - Name - Hapugahapitiya H.M.S (GitUsername - ) / Component 2 - 
 ### Member 3 - IT21225574 - Name - Jayasinghe J.A.J.M (GitUsername - ) / Component 3 - 
-### Member 4 - IT21168086 - Name - Munasinghe V.N (GitUsername - ) / Component 4 -  
+### Member 4 - IT21168086 - Name - Munasinghe V.N (GitUsername - ) / Component 4 -  AI Powered Thyroid Disease Risk Assessment Tool
 
 #### Brief Description of the project - 
 

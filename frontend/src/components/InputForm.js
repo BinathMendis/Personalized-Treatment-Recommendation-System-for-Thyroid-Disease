@@ -4,34 +4,21 @@ const InputForm = ({ extractedData, onSubmit }) => {
   const [formData, setFormData] = useState({});
   const [isEditable, setIsEditable] = useState(false); // Controls edit mode
 
-  // Load extracted data into form state
   useEffect(() => {
-    if (extractedData) {
-      setFormData({
-        age: extractedData.age || "",
-        gender: extractedData.gender || "",
-        weight: extractedData.weight || "Not Detected",
-        height: extractedData.height || "Not Detected",
-        TSH: extractedData.TSH || "",
-        T3: extractedData.T3 || "",
-        T4: extractedData.T4 || "",
-      });
-    }
+    setFormData(extractedData);
   }, [extractedData]);
 
-  // Handle input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(formData);
   };
 
   return (
-    <div className="input-form">
+    <div>
       <h3>📋 Extracted Lab Values</h3>
 
       {/* Edit Button */}
@@ -45,7 +32,6 @@ const InputForm = ({ extractedData, onSubmit }) => {
 
         <label>Gender:</label>
         <select name="gender" value={formData.gender} onChange={handleChange} disabled={!isEditable}>
-          <option value="">Select Gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
         </select>
@@ -65,7 +51,7 @@ const InputForm = ({ extractedData, onSubmit }) => {
         <label>T4:</label>
         <input type="number" name="T4" value={formData.T4} onChange={handleChange} disabled={!isEditable} />
 
-        <button type="submit" disabled={isEditable}>🔍 Predict</button>
+        <button type="submit" disabled={isEditable}>🔍 Save & Predict</button>
       </form>
     </div>
   );

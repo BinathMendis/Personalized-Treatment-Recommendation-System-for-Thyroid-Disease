@@ -1,44 +1,43 @@
 import React, { useState } from "react";
+import axios from "axios";
 
-const FileUpload = ({ onExtracted }) => {
+const FileUpload = ({ onExtractedData }) => {  // ✅ Correct prop name
   const [file, setFile] = useState(null);
-  const [message, setMessage] = useState("");
+  const [error, setError] = useState(null);
 
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
+  const handleFileChange = (event) => {
+    setFile(event.target.files[0]);
+    setError(null); // Clear previous errors
   };
 
   const handleUpload = async () => {
     if (!file) {
-      setMessage("❌ Please select a file first.");
+      setError("❌ Please select a file first.");
       return;
     }
 
-    setMessage("📂 Uploading...");
+    const formData = new FormData();
+    formData.append("file", file);
 
-    // Simulating OCR extraction (Replace with API call)
-    setTimeout(() => {
-      const extractedData = {
-        age: 45,
-        gender: "Male",
-        weight: "Not Detected",
-        height: "Not Detected",
-        TSH: 3.2,
-        T3: 1.6,
-        T4: 1.2,
-      };
+    try {
+      const response = await axios.post("http://127.0.0.1:8000/extract_lab_values", formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
 
-      setMessage("✅ Extraction Successful!");
-      onExtracted(extractedData); // Send extracted data to parent (App.js)
-    }, 1500);
+      console.log("Extracted Data:", response.data);
+      onExtractedData(response.data);  // ✅ Correct function name
+    } catch (error) {
+      console.error("Error extracting data:", error);
+      setError("❌ Failed to extract data. Please try again.");
+    }
   };
 
   return (
     <div>
-      <h3>📤 Upload Lab Report</h3>
+      <h3>📂 Upload Lab Report</h3>
       <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUpload}>📄 Upload & Extract</button>
-      <p>{message}</p>
+      <button onClick={handleUpload}>📤 Upload & Extract</button>
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );
 };

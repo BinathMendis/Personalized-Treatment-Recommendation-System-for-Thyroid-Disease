@@ -1,0 +1,18 @@
+# Core Libraries
+pandas
+numpy
+scikit-learn
+seaborn
+matplotlib
+shap
+joblib
+
+# Web Framework (For API)
+flask
+flask-cors
+
+# For JSON Handling
+pydantic
+
+# Extra (Only if you're using Jupyter Notebook)
+notebook

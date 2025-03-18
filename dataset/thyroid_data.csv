@@ -1,0 +1,101 @@
+Patient_ID,Age,Gender,Weight_kg,Height_cm,Family_History,Existing_Conditions,TSH,T3,T4,Anti_Thyroid_Antibodies,Symptoms,Diet,Exercise,Sleep_Hours,Smoking,Alcohol,Medication,Disease_Progression
+P001,69,Male,111,160,No,None,9.64,1.25,2.46,72.69,Fatigue,High Protein,None,5,Yes,No,Levothyroxine,Critical
+P002,60,Male,65,172,No,Hypertension,4.68,1.43,0.82,5.01,None,High Carb,Light,7,Yes,No,None,Worsening
+P003,20,Female,104,185,Yes,Diabetes,6.95,3.2,2.24,49.78,None,High Protein,None,4,No,No,Both,Critical
+P004,25,Female,50,160,Yes,None,6.41,3.49,1.83,78.66,Weight Gain,Balanced,Intense,5,Yes,Yes,Both,Worsening
+P005,40,Female,101,157,No,None,9.16,0.67,0.85,46.85,Weight Gain,High Protein,Intense,4,Yes,Yes,Methimazole,Critical
+P006,52,Female,70,182,No,None,3.71,0.89,1.62,19.07,None,High Protein,Moderate,5,No,Yes,Both,Worsening
+P007,40,Female,68,194,No,Hypertension,0.16,2.47,2.07,88.25,Fatigue,High Carb,Moderate,4,No,Yes,Levothyroxine,Stable
+P008,76,Male,54,158,No,Both,7.94,2.19,2.48,30.2,Anxiety,High Protein,Moderate,5,Yes,Yes,None,Critical
+P009,25,Female,72,185,No,None,9.58,2.42,1.61,62.62,None,High Protein,Moderate,7,No,Yes,None,Critical
+P010,33,Female,93,182,No,Hypertension,1.16,3.14,0.64,17.68,Fatigue,Low Carb,None,4,No,No,Methimazole,Critical
+P011,49,Female,89,148,No,Diabetes,8.8,3.37,1.93,77.44,Anxiety,High Carb,Moderate,8,Yes,Yes,Methimazole,Stable
+P012,31,Male,53,174,Yes,Both,6.14,3.2,2.06,36.71,Weight Gain,Balanced,Light,5,Yes,No,None,Stable
+P013,57,Female,83,184,No,None,3.32,1.25,1.14,1.62,Weight Loss,High Protein,None,8,Yes,Yes,Levothyroxine,Worsening
+P014,42,Female,92,154,No,Both,9.03,0.6,1.3,34.08,Weight Loss,High Carb,Light,6,No,Yes,Levothyroxine,Worsening
+P015,39,Female,105,169,No,Hypertension,0.62,3.12,1.63,10.72,Weight Loss,High Protein,Light,9,No,No,Methimazole,Critical
+P016,54,Male,58,183,Yes,Hypertension,8.3,0.87,1.21,57.0,None,Balanced,Moderate,7,No,Yes,Both,Stable
+P017,37,Female,77,183,Yes,Diabetes,4.54,3.39,1.95,95.52,Anxiety,High Protein,Intense,7,No,No,None,Stable
+P018,34,Male,114,183,No,Both,1.99,2.12,1.18,79.39,Weight Loss,High Protein,Moderate,4,No,No,Levothyroxine,Worsening
+P019,69,Male,115,192,Yes,None,0.69,1.44,1.73,58.03,Weight Gain,High Protein,None,9,No,No,None,Worsening
+P020,57,Female,80,161,No,Diabetes,5.06,1.25,2.4,55.29,Anxiety,High Carb,Light,5,Yes,Yes,Methimazole,Worsening
+P021,30,Female,88,173,Yes,Both,4.0,2.19,1.55,85.95,None,High Protein,Light,8,No,No,Both,Critical
+P022,35,Female,77,163,Yes,Hypertension,2.05,1.92,2.38,47.24,Weight Gain,Balanced,Light,8,No,No,Methimazole,Worsening
+P023,56,Male,94,166,No,None,1.77,1.68,1.95,65.9,Weight Loss,Balanced,Light,4,Yes,No,None,Worsening
+P024,31,Female,94,157,Yes,Hypertension,0.29,2.29,0.77,99.04,Weight Gain,High Protein,Light,4,No,No,None,Critical
+P025,51,Male,114,177,Yes,Both,9.37,0.95,1.4,37.12,Weight Loss,High Protein,Moderate,9,No,No,None,Critical
+P026,43,Female,61,181,No,Diabetes,4.34,0.69,0.65,37.21,Anxiety,Low Carb,Moderate,9,No,No,Methimazole,Worsening
+P027,69,Female,104,168,No,Both,4.19,2.62,2.14,71.92,Weight Gain,High Carb,None,9,No,No,Methimazole,Stable
+P028,58,Male,53,143,No,Hypertension,7.01,2.97,1.79,85.55,Weight Gain,Balanced,Light,8,Yes,No,None,Worsening
+P029,54,Male,116,199,No,Both,5.18,1.48,2.38,53.14,None,Low Carb,Moderate,9,Yes,Yes,Levothyroxine,Stable
+P030,67,Female,104,159,Yes,Both,4.23,1.73,1.78,28.33,Weight Loss,High Carb,Moderate,6,No,No,Both,Worsening
+P031,78,Female,105,149,Yes,Diabetes,3.61,0.96,0.78,29.1,Anxiety,Low Carb,Moderate,6,No,No,Methimazole,Worsening
+P032,52,Female,89,192,Yes,Both,0.44,0.82,1.29,31.18,Fatigue,High Protein,Light,8,No,No,Both,Worsening
+P033,70,Female,94,151,No,None,9.47,3.48,1.45,73.52,Weight Loss,High Carb,None,5,No,No,Both,Worsening
+P034,78,Female,110,165,No,Both,3.42,0.61,1.74,44.58,Fatigue,High Carb,Moderate,9,Yes,Yes,Methimazole,Critical
+P035,33,Male,112,193,Yes,None,7.26,3.41,2.26,19.7,Weight Loss,High Carb,Moderate,4,No,No,None,Stable
+P036,34,Female,56,195,Yes,Both,8.8,1.32,1.9,8.29,Anxiety,High Protein,Light,7,Yes,No,Levothyroxine,Worsening
+P037,64,Male,69,184,No,None,9.26,1.0,0.96,90.54,Anxiety,High Protein,Intense,7,No,No,Levothyroxine,Worsening
+P038,38,Male,91,188,No,Both,0.11,2.16,0.56,75.43,Weight Gain,High Protein,None,6,Yes,No,Methimazole,Worsening
+P039,37,Female,97,154,Yes,Both,3.73,1.7,1.87,4.18,Anxiety,Low Carb,Light,8,No,Yes,Both,Stable
+P040,71,Female,107,197,Yes,Hypertension,8.26,0.77,1.99,74.37,Weight Gain,High Protein,Intense,9,Yes,Yes,Methimazole,Stable
+P041,48,Female,111,193,Yes,Diabetes,8.34,0.71,1.92,49.91,None,High Carb,Light,5,No,No,Both,Critical
+P042,69,Female,70,143,Yes,Both,4.22,1.36,1.6,94.39,Fatigue,Balanced,None,6,Yes,Yes,Both,Critical
+P043,78,Female,80,172,No,Both,1.02,1.06,1.28,8.43,None,Low Carb,Light,7,No,Yes,Levothyroxine,Critical
+P044,21,Male,85,195,Yes,Diabetes,0.56,2.12,1.68,80.38,Weight Gain,Low Carb,Intense,5,No,Yes,Methimazole,Critical
+P045,22,Female,67,197,Yes,Both,3.24,1.36,0.72,34.83,None,High Protein,Intense,6,No,No,None,Worsening
+P046,66,Female,96,198,No,Both,1.08,3.49,0.78,94.14,None,Low Carb,Light,7,Yes,Yes,Methimazole,Stable
+P047,53,Male,75,176,No,Diabetes,8.91,1.59,2.05,95.2,Anxiety,High Protein,None,4,No,No,None,Stable
+P048,61,Male,61,151,No,Hypertension,0.21,1.28,1.27,85.51,Anxiety,High Carb,Moderate,4,No,No,Methimazole,Stable
+P049,52,Male,89,170,Yes,None,4.43,3.47,1.31,71.77,Anxiety,High Carb,None,5,No,No,None,Critical
+P050,52,Male,104,142,No,Diabetes,7.44,1.65,2.11,91.28,Anxiety,High Protein,Intense,4,No,Yes,None,Worsening
+P051,75,Male,115,160,Yes,Hypertension,4.5,2.03,2.35,31.04,Fatigue,Low Carb,Intense,4,Yes,No,Both,Worsening
+P052,63,Female,58,191,No,Diabetes,3.29,2.41,1.27,21.34,Fatigue,High Protein,None,4,No,Yes,None,Stable
+P053,49,Female,93,185,Yes,Diabetes,1.97,1.31,1.27,82.07,Weight Loss,Low Carb,Light,6,No,No,Methimazole,Stable
+P054,40,Female,68,176,No,Hypertension,8.06,2.55,1.8,6.33,Fatigue,High Carb,None,9,No,No,Methimazole,Critical
+P055,23,Female,114,167,Yes,Hypertension,7.38,2.29,2.47,98.44,Weight Gain,High Carb,None,5,No,No,Both,Worsening
+P056,70,Female,51,163,No,Both,7.56,1.22,0.93,90.16,Weight Gain,High Protein,Light,6,No,Yes,Methimazole,Critical
+P057,29,Male,76,143,No,Diabetes,5.38,1.81,1.3,84.82,Weight Gain,High Protein,Light,8,Yes,Yes,Levothyroxine,Stable
+P058,22,Female,58,182,Yes,Diabetes,9.84,1.84,0.7,12.46,None,Low Carb,None,8,Yes,No,None,Stable
+P059,50,Male,55,173,No,Diabetes,3.53,3.08,0.93,32.67,Fatigue,Low Carb,Intense,9,Yes,Yes,Levothyroxine,Critical
+P060,62,Female,57,181,No,Hypertension,0.6,3.33,1.4,94.74,Anxiety,Low Carb,Moderate,5,Yes,No,Methimazole,Stable
+P061,73,Female,82,172,No,Hypertension,9.94,1.73,1.84,64.73,None,Balanced,Moderate,9,No,No,None,Critical
+P062,35,Male,59,180,Yes,Both,2.09,1.9,2.23,75.13,Fatigue,Balanced,Moderate,4,No,No,Both,Stable
+P063,43,Female,56,180,No,Both,9.92,2.96,0.61,7.62,Weight Gain,Low Carb,Light,7,Yes,No,Both,Critical
+P064,50,Female,68,199,Yes,None,7.78,3.05,2.01,22.51,None,Low Carb,Intense,6,No,No,None,Stable
+P065,24,Male,75,173,Yes,Both,2.5,2.73,0.55,29.14,Fatigue,High Protein,Moderate,7,No,No,Methimazole,Stable
+P066,65,Male,55,168,Yes,None,2.92,1.89,1.63,86.23,Anxiety,Balanced,None,5,Yes,Yes,Levothyroxine,Worsening
+P067,58,Female,61,153,Yes,Hypertension,4.4,3.35,1.45,50.58,Fatigue,Balanced,Light,4,No,No,None,Stable
+P068,48,Male,107,188,Yes,None,6.18,2.13,0.82,82.85,Anxiety,Low Carb,Moderate,5,Yes,No,Both,Stable
+P069,63,Male,89,189,Yes,Hypertension,7.87,0.8,1.28,94.65,None,Low Carb,Light,8,No,No,Both,Worsening
+P070,39,Female,71,178,Yes,Hypertension,7.91,3.23,2.08,22.08,None,High Carb,None,8,Yes,No,Levothyroxine,Critical
+P071,33,Female,84,193,No,Diabetes,3.55,2.58,0.56,90.25,None,High Carb,None,5,No,Yes,Both,Critical
+P072,27,Male,108,194,No,Both,7.17,0.51,1.72,1.37,Weight Gain,Balanced,None,5,No,No,Both,Worsening
+P073,20,Female,117,189,Yes,Both,9.6,2.47,0.76,70.89,None,High Carb,Intense,4,No,No,Both,Critical
+P074,43,Female,74,170,No,Diabetes,3.12,1.95,1.54,64.65,None,Balanced,None,9,No,Yes,Levothyroxine,Stable
+P075,44,Male,89,181,Yes,Both,7.08,1.71,0.64,0.39,None,Low Carb,None,4,No,Yes,None,Worsening
+P076,34,Female,108,158,No,Both,5.64,1.83,1.07,65.12,Fatigue,High Carb,Moderate,5,No,Yes,Both,Stable
+P077,67,Female,89,143,Yes,Both,2.23,3.32,1.84,12.35,None,High Protein,Intense,9,Yes,No,Methimazole,Worsening
+P078,31,Male,53,195,Yes,Both,3.89,1.11,1.42,25.45,Weight Gain,Low Carb,Intense,9,Yes,No,None,Critical
+P079,49,Female,114,169,No,Hypertension,9.95,2.33,1.02,50.38,Fatigue,Low Carb,None,7,No,No,Methimazole,Stable
+P080,55,Male,91,157,Yes,Both,2.56,1.64,2.37,36.28,Anxiety,Low Carb,Light,9,No,No,Methimazole,Critical
+P081,58,Female,91,179,Yes,Both,2.67,2.87,0.99,81.74,None,High Protein,None,7,Yes,No,Levothyroxine,Worsening
+P082,57,Female,59,151,Yes,Both,7.31,2.54,1.46,68.42,None,High Carb,Intense,8,Yes,No,None,Stable
+P083,53,Female,57,195,No,Hypertension,8.77,2.71,2.38,31.85,Weight Gain,High Protein,None,5,Yes,No,Both,Stable
+P084,65,Male,103,180,No,Diabetes,8.28,2.3,0.51,5.24,Weight Gain,Balanced,Light,4,Yes,No,Levothyroxine,Worsening
+P085,78,Female,119,140,Yes,None,6.9,1.6,1.98,96.24,Anxiety,High Protein,Moderate,6,No,Yes,None,Worsening
+P086,77,Male,52,199,Yes,Hypertension,8.94,0.95,2.39,86.81,Anxiety,Low Carb,Moderate,5,No,Yes,Both,Critical
+P087,53,Female,68,147,Yes,Hypertension,8.8,0.99,1.17,97.41,Weight Loss,Balanced,Intense,4,Yes,No,Levothyroxine,Worsening
+P088,20,Female,99,196,No,Diabetes,5.02,3.1,2.13,30.19,None,Low Carb,Light,5,No,Yes,Levothyroxine,Stable
+P089,42,Female,75,168,No,Diabetes,8.76,0.87,0.79,80.34,Weight Loss,High Carb,Intense,8,No,No,Methimazole,Worsening
+P090,31,Male,113,194,No,Hypertension,1.48,2.82,0.86,35.41,Weight Gain,Low Carb,Intense,5,Yes,Yes,Levothyroxine,Critical
+P091,45,Male,105,170,No,Both,3.66,1.89,2.35,53.87,Fatigue,Low Carb,Intense,6,Yes,No,Levothyroxine,Critical
+P092,63,Male,54,192,Yes,Hypertension,9.79,1.25,1.76,74.0,None,High Carb,Light,5,No,No,Methimazole,Critical
+P093,52,Female,68,170,Yes,None,7.49,1.22,1.0,5.84,Anxiety,Balanced,Intense,4,Yes,No,Levothyroxine,Worsening
+P094,52,Female,70,197,Yes,Diabetes,3.48,2.89,1.75,17.17,Anxiety,Low Carb,Moderate,7,Yes,Yes,None,Stable
+P095,79,Male,77,156,No,None,7.89,3.29,2.42,6.84,Weight Loss,High Protein,None,7,Yes,No,Both,Worsening
+P096,69,Male,96,155,No,Hypertension,1.64,1.65,1.18,15.44,Fatigue,Balanced,Moderate,8,Yes,No,Both,Worsening
+P097,64,Male,114,184,Yes,Hypertension,4.28,2.49,2.2,72.21,None,High Carb,Moderate,4,Yes,No,Levothyroxine,Worsening
+P098,65,Female,99,140,Yes,Both,8.6,1.81,1.56,85.74,Weight Loss,Low Carb,Light,9,No,No,None,Worsening
+P099,44,Male,114,188,Yes,None,7.73,0.52,1.97,73.07,Fatigue,Balanced,Light,8,No,No,None,Critical
+P100,50,Male,116,160,Yes,Diabetes,9.47,3.25,0.74,5.04,Fatigue,Balanced,None,6,No,Yes,None,Worsening

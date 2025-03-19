@@ -26,7 +26,7 @@ const FileUpload = ({ onExtractedData }) => {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
-      console.log("Extracted Data:", response.data);
+      console.log("📤 Extracted Data:", response.data);
 
       if (response.data?.extracted_values) {
         onExtractedData(response.data.extracted_values); // ✅ Send extracted values
@@ -43,13 +43,27 @@ const FileUpload = ({ onExtractedData }) => {
   };
 
   return (
-    <div>
-      <h3>📂 Upload Lab Report</h3>
-      <input type="file" onChange={handleFileChange} disabled={loading} />
-      <button onClick={handleUpload} disabled={loading}>
+    <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-lg mx-auto">
+      <h3 className="text-xl font-semibold text-gray-700 mb-4">📂 Upload Lab Report</h3>
+
+      <input
+        type="file"
+        onChange={handleFileChange}
+        disabled={loading}
+        className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none"
+      />
+
+      <button
+        onClick={handleUpload}
+        disabled={loading}
+        className={`mt-4 w-full py-2 text-white font-semibold rounded-lg transition-all ${
+          loading ? "bg-gray-400 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-600"
+        }`}
+      >
         {loading ? "⏳ Extracting..." : "📤 Upload & Extract"}
       </button>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+
+      {error && <p className="text-red-500 mt-2">{error}</p>}
     </div>
   );
 };

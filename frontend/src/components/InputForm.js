@@ -17,7 +17,7 @@ const InputForm = ({ extractedData, onSubmit }) => {
   useEffect(() => {
     if (extractedData) {
       setFormData({
-        age: extractedData.age ?? "",  // Convert `null` to empty string
+        age: extractedData.age ?? "", // Convert `null` to empty string
         gender: extractedData.gender || "Male",
         weight_kg: extractedData.weight_kg ?? "",
         height_cm: extractedData.height_cm ?? "",
@@ -51,85 +51,67 @@ const InputForm = ({ extractedData, onSubmit }) => {
   };
 
   return (
-    <div>
-      <h3>📋 Extracted Lab Values</h3>
+    <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg mx-auto mt-6">
+      <h3 className="text-xl font-semibold text-gray-700 mb-4">📋 Extracted Lab Values</h3>
 
       {/* Edit Button */}
       <button
         type="button"
         onClick={() => setIsEditable(!isEditable)}
-        style={{ marginBottom: "10px" }}
+        className="mb-4 px-4 py-2 rounded-md text-white font-semibold transition-all 
+                   bg-blue-500 hover:bg-blue-600 focus:outline-none"
       >
         {isEditable ? "🔒 Lock & Save" : "✏️ Edit Data"}
       </button>
 
-      <form onSubmit={handleSubmit}>
-        <label>Age:</label>
-        <input
-          type="number"
-          name="age"
-          value={formData.age}
-          onChange={handleChange}
-          disabled={!isEditable}
-        />
+      <form onSubmit={handleSubmit} className="space-y-4">
+        {/* Input Fields */}
+        {[
+          { label: "Age", name: "age", type: "number" },
+          { label: "Weight (kg)", name: "weight_kg", type: "number" },
+          { label: "Height (cm)", name: "height_cm", type: "number" },
+          { label: "TSH", name: "tsh", type: "number" },
+          { label: "T3", name: "t3", type: "number" },
+          { label: "T4", name: "t4", type: "number" },
+        ].map(({ label, name, type }) => (
+          <div key={name}>
+            <label className="block text-gray-600 font-medium">{label}:</label>
+            <input
+              type={type}
+              name={name}
+              value={formData[name]}
+              onChange={handleChange}
+              disabled={!isEditable}
+              className="w-full px-3 py-2 border rounded-md focus:outline-none 
+                         focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"
+            />
+          </div>
+        ))}
 
-        <label>Gender:</label>
-        <select
-          name="gender"
-          value={formData.gender}
-          onChange={handleChange}
-          disabled={!isEditable}
+        {/* Gender Selection */}
+        <div>
+          <label className="block text-gray-600 font-medium">Gender:</label>
+          <select
+            name="gender"
+            value={formData.gender}
+            onChange={handleChange}
+            disabled={!isEditable}
+            className="w-full px-3 py-2 border rounded-md focus:outline-none 
+                       focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"
+          >
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={isEditable}
+          className={`w-full px-4 py-2 font-semibold rounded-md transition-all ${
+            isEditable ? "bg-gray-400 cursor-not-allowed" : "bg-green-500 hover:bg-green-600 text-white"
+          }`}
         >
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-        </select>
-
-        <label>Weight (kg):</label>
-        <input
-          type="number"
-          name="weight_kg"
-          value={formData.weight_kg}
-          onChange={handleChange}
-          disabled={!isEditable}
-        />
-
-        <label>Height (cm):</label>
-        <input
-          type="number"
-          name="height_cm"
-          value={formData.height_cm}
-          onChange={handleChange}
-          disabled={!isEditable}
-        />
-
-        <label>TSH:</label>
-        <input
-          type="number"
-          name="tsh"
-          value={formData.tsh}
-          onChange={handleChange}
-          disabled={!isEditable}
-        />
-
-        <label>T3:</label>
-        <input
-          type="number"
-          name="t3"
-          value={formData.t3}
-          onChange={handleChange}
-          disabled={!isEditable}
-        />
-
-        <label>T4:</label>
-        <input
-          type="number"
-          name="t4"
-          value={formData.t4}
-          onChange={handleChange}
-          disabled={!isEditable}
-        />
-
-        <button type="submit" disabled={isEditable}>
           🔍 Save & Predict
         </button>
       </form>

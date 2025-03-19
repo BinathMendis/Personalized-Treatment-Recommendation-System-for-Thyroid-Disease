@@ -11,18 +11,36 @@ const App = () => {
 
   // ✅ Receive extracted data and move to the next step
   const handleExtractedData = (data) => {
-    console.log("Extracted Data Received in App:", data);
-    setExtractedData(data);
+    console.log("📤 Extracted Data Received in App:", data);
+
+    if (!data) {
+      console.error("❌ Error: No extracted values found in response.");
+      return;
+    }
+
+    setExtractedData(data);  // ✅ Directly setting extracted values
     setStep("edit"); // Move to InputForm
   };
 
   // ✅ Handle form submission for prediction
   const handlePrediction = async (formData) => {
     try {
-      console.log("Submitting Form Data:", formData);
-      const response = await axios.post("http://127.0.0.1:8000/predict", formData);
+      const formattedData = {
+        age: formData.age ? Number(formData.age) : 0,
+        gender: formData.gender,
+        weight_kg: formData.weight_kg ? Number(formData.weight_kg) : 0,
+        height_cm: formData.height_cm ? Number(formData.height_cm) : 0,
+        tsh: formData.tsh ? Number(formData.tsh) : 0,
+        t3: formData.t3 ? Number(formData.t3) : 0,
+        t4: formData.t4 ? Number(formData.t4) : 0,
+      };
+
+      console.log("📊 Submitting Form Data:", formattedData);
+
+      const response = await axios.post("http://127.0.0.1:8000/predict", formattedData);
+
       setPrediction(response.data);
-      setStep("results"); // Move to Results
+      setStep("results"); // Move to results screen
     } catch (error) {
       console.error("Error predicting risk:", error);
     }

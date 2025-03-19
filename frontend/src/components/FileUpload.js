@@ -25,7 +25,14 @@ const FileUpload = ({ onExtractedData }) => {  // ✅ Correct prop name
       });
 
       console.log("Extracted Data:", response.data);
-      onExtractedData(response.data);  // ✅ Correct function name
+
+      if (response.data?.extracted_values) {
+        onExtractedData(response.data.extracted_values);  // ✅ Send only extracted_values
+      } else {
+        setError("❌ Extraction failed. No data found.");
+      }
+
+      setFile(null); // Reset file input after upload
     } catch (error) {
       console.error("Error extracting data:", error);
       setError("❌ Failed to extract data. Please try again.");

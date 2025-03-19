@@ -13,11 +13,11 @@ const InputForm = ({ extractedData, onSubmit }) => {
 
   const [isEditable, setIsEditable] = useState(false); // Controls edit mode
 
-  // ✅ Ensure extracted values are mapped properly (fixing missing data)
+  // ✅ Ensure extracted values are mapped properly
   useEffect(() => {
     if (extractedData) {
       setFormData({
-        age: extractedData.age ?? "",  // Convert `null` to empty string
+        age: extractedData.age ?? "",
         gender: extractedData.gender || "Male",
         weight_kg: extractedData.weight_kg ?? "",
         height_cm: extractedData.height_cm ?? "",
@@ -35,15 +35,15 @@ const InputForm = ({ extractedData, onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // ✅ Convert empty strings to `null` or numbers before submitting
+    // ✅ Convert empty values to `null` or numbers before submitting
     const formattedData = {
-      age: formData.age ? Number(formData.age) : 0,
+      age: formData.age ? Number(formData.age) : null,
       gender: formData.gender,
-      weight_kg: formData.weight_kg ? Number(formData.weight_kg) : 0,
-      height_cm: formData.height_cm ? Number(formData.height_cm) : 0,
-      tsh: formData.tsh ? Number(formData.tsh) : 0,
-      t3: formData.t3 ? Number(formData.t3) : 0,
-      t4: formData.t4 ? Number(formData.t4) : 0,
+      weight_kg: formData.weight_kg ? Number(formData.weight_kg) : null,
+      height_cm: formData.height_cm ? Number(formData.height_cm) : null,
+      tsh: formData.tsh ? Number(formData.tsh) : null,
+      t3: formData.t3 ? Number(formData.t3) : null,
+      t4: formData.t4 ? Number(formData.t4) : null,
     };
 
     console.log("✅ Submitting modified values:", formattedData);

@@ -7,7 +7,7 @@ import axios from "axios";
 const App = () => {
   const [extractedData, setExtractedData] = useState(null);
   const [prediction, setPrediction] = useState(null);
-  const [step, setStep] = useState("upload"); // "upload" -> "edit" -> "results"
+  const [step, setStep] = useState("upload"); // Steps: "upload" -> "edit" -> "results"
 
   // ✅ Receive extracted data and move to the next step
   const handleExtractedData = (data) => {
@@ -18,7 +18,7 @@ const App = () => {
       return;
     }
 
-    setExtractedData(data);  // ✅ Directly setting extracted values
+    setExtractedData(data);
     setStep("edit"); // Move to InputForm
   };
 
@@ -54,30 +54,35 @@ const App = () => {
   };
 
   return (
-    <div className="app">
-      <h2>🦋 Thyroid Disease Prediction</h2>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
+      <h2 className="text-3xl font-bold text-blue-600 mb-6">🦋 Thyroid Disease Prediction</h2>
 
-      {/* Step 1: Upload File */}
-      {step === "upload" && <FileUpload onExtractedData={handleExtractedData} />}
+      <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-2xl">
+        {/* Step 1: Upload File */}
+        {step === "upload" && <FileUpload onExtractedData={handleExtractedData} />}
 
-      {/* Step 2: Edit Data (if extracted) */}
-      {step === "edit" && (
-        <InputForm
-          key={JSON.stringify(extractedData)}
-          extractedData={extractedData}
-          onSubmit={handlePrediction}
-        />
-      )}
+        {/* Step 2: Edit Data (if extracted) */}
+        {step === "edit" && (
+          <InputForm
+            key={JSON.stringify(extractedData)}
+            extractedData={extractedData}
+            onSubmit={handlePrediction}
+          />
+        )}
 
-      {/* Step 3: Show Results */}
-      {step === "results" && <Results prediction={prediction} onRestart={handleRestart} />}
+        {/* Step 3: Show Results */}
+        {step === "results" && <Results prediction={prediction} onRestart={handleRestart} />}
 
-      {/* 🔄 Start Over Button (only show after upload) */}
-      {step !== "upload" && (
-        <button onClick={handleRestart} style={{ marginTop: "10px" }}>
-          🔄 Start Over
-        </button>
-      )}
+        {/* 🔄 Start Over Button (only show after upload) */}
+        {step !== "upload" && (
+          <button
+            onClick={handleRestart}
+            className="mt-4 bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"
+          >
+            🔄 Start Over
+          </button>
+        )}
+      </div>
     </div>
   );
 };

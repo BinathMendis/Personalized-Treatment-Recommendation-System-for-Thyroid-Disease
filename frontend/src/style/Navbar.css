@@ -1,0 +1,15 @@
+.nav-list-item .MuiTypography-root {
+  color: #0b2fa5 !important;  /* text color blue */
+  font-weight: bold !important; /* bold text */
+}
+
+.nav-list-item:hover {
+  background-color: #e0e0ff !important; /* light blue hover */
+}
+
+.nav-list-item.Mui-focusVisible,
+.nav-list-item:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important; /* no focus background */
+}

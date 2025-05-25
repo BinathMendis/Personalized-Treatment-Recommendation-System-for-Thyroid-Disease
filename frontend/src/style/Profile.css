@@ -1,0 +1,91 @@
+/* Profile container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  padding: 30px;
+  background-color: #ffffff; /* Light background for profile container */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 100%;
+  max-width: 600px; /* Limiting the max width of the container */
+  margin: 60px auto 0 auto; /* Added margin-top to push it lower */
+}
+
+/* Profile data section styling */
+.profile-data {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: #f5f5f5; /* Light grey background for profile data */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Limiting the max width of profile data */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for each data entry in the profile data */
+.profile-data .MuiTypography-root {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333; /* Darker text for better readability */
+  text-align: left; /* Aligns text to the left for better readability */
+  line-height: 1.6; /* Adds space between lines for readability */
+}
+
+/* Bold text for labels (age, gender, etc.) */
+.profile-data .MuiTypography-root strong {
+  font-weight: 600; /* Slightly bolder labels for clarity */
+  color: #1976d2; /* Blue color for labels to make them stand out */
+}
+
+/* Button styling */
+.profile-container button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  font-size: 1.1rem;
+  background-color: #1976d2; /* Blue button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  max-width: 500px;
+}
+
+.profile-container button:hover {
+  background-color: #155a8a; /* Darker blue when hovered */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Logout button styling */
+.profile-container .MuiButton-root {
+  margin-top: 15px;
+  background-color: #f44336; /* Red color for logout */
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.profile-container .MuiButton-root:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: translateY(-2px);
+}
+
+/* Typography for the modal or profile section when first-time login */
+.profile-container p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* Small text for additional notes or instructions */
+.profile-container .MuiTypography-root.small-text {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 10px;
+}

@@ -1,0 +1,197 @@
+/* TrackHealth.css */
+
+.track-health-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.track-health-container h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.tsh-welcome-box {
+  min-height: 250px;          /* or whatever height you want */
+  padding: 32px;
+  background-color: #0b2fa5 !important; /* green background */
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  border-radius: 10px;         /* optional */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.tsh-welcome-box h4 {
+  font-size: 25pt;
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+.subText {
+  font-size: 1.1rem;
+  margin-top: 16px;
+  color: #ffffff; /* white text */
+  text-align: center;
+}
+
+/* Container for the health cards grid */
+.patient-data-grid {
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+/* Each card styling */
+.health-card {
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #ffffff;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hover effect to lift the card slightly */
+.health-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+}
+
+/* Icon style inside the card */
+.health-card svg {
+  font-size: 48px !important;
+  color: #1976d2; /* MUI primary blue */
+  margin-bottom: 12px;
+}
+
+/* Typography for the key (e.g. Age, Weight) */
+.health-card .MuiTypography-h6 {
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Typography for the value */
+.health-card .MuiTypography-body1 {
+  font-size: 1.1rem;
+  color: #555555;
+  font-weight: 500;
+}
+/* Typography for the unit (e.g. kg, cm) */
+.health-card .MuiTypography-body2 {
+  font-size: 0.9rem;
+  color: #777777;
+  font-weight: 400;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.MuiTextField-root {
+    margin-bottom: 15px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.result-container {
+    background-color: #eaf1f6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.result-container p {
+    font-size: 1rem;
+    color: #555;
+    margin: 8px 0;
+}
+
+.result-container p strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.MuiButton-root {
+    text-transform: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.MuiButton-contained {
+    background-color: #00796b;
+    color: white;
+}
+
+.MuiButton-contained:hover {
+    background-color: #004d40;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .track-health-container {
+        padding: 15px;
+    }
+
+    .MuiTextField-root {
+        margin-bottom: 10px;
+    }
+
+    .result-container {
+        padding: 15px;
+    }
+}
+
+/* Info button inside the welcome box */
+.info-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s;
+}
+
+.info-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Image inside modal */
+.lab-image-example {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.centered-black-text {
+  text-align: center;
+  color: black !important;
+  width: 100%;
+}

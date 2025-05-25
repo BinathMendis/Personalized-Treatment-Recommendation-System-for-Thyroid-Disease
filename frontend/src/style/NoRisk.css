@@ -1,0 +1,94 @@
+/* NoRisk.css */
+.result-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.result-card {
+  padding: 0;
+  border-radius: 16px;
+  border-left: 6px solid #1976d2;
+  background-color: #f0f8ff;
+  overflow: hidden;
+}
+
+.risk-banner {
+  padding: 25px 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.risk-banner.low-risk {
+  background-color: #1976d2;
+}
+
+.risk-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.risk-icon {
+  font-size: 2.5rem !important;
+  margin-bottom: 5px;
+}
+
+.risk-title {
+  font-weight: bold !important;
+}
+
+.risk-description {
+  opacity: 0.9;
+  color: white !important;
+  margin-top: 5px !important;
+}
+
+.info-box {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+
+.button-group {
+  margin-top: 30px;
+  padding: 0 30px 20px !important;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.result-card > .MuiTypography-h4 {
+  padding: 0 30px;
+  margin-top: 20px !important;
+}
+
+.result-card > .MuiDivider-root {
+  margin: 20px 30px !important;
+}
+
+.result-card > .MuiTypography-h6 {
+  padding: 0 30px;
+}
+
+/* Recommended Actions styling */
+.MuiList-root {
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  padding: 15px !important;
+}
+
+.MuiListItem-root {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+/* Footer text styling */
+.MuiTypography-caption {
+  font-size: 0.8rem !important;
+  padding: 0 30px !important;
+}
